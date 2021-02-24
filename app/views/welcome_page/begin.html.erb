@@ -1,12 +1,25 @@
+<style>
+    div {
+        width: 100%;
+    }
 
-<h1>Welcome, buddy!</h1>
+    a {
+        display: block;
+        text-align: center;
+    }
+</style>
+<p></p>
 
-<title>книпка</title>
-<body>
-  <form>
-    <p><input type = button value="я новенький"></p>
-  </form>
-  <form action = "" method="get">
-    <p><input type = button value="я уже смешарик"></p>
-  </form>
-</body>
+
+<div class="button" style="margin-top: 100px">
+  <h1 align="center">Привет, друг!</h1>
+
+  <body>
+  <%= link_to "я новенький", registration_path, :class => 'button' %>
+  </body>
+  <p></p>
+  <p></p>
+  <body>
+  <%= link_to "я уже смешарик", login_path, :class => 'btn btn-outline-primary' %>
+  </body>
+</div>
