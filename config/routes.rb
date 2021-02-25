@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   get 'signup' => 'users#new'
   resources :users
   get 'login' => 'login_page'
-  get 'registration' => 'registration'
+
 end
 3000
