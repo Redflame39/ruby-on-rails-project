@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   get 'users/new'
   root 'welcome_page#begin'
   get 'welcome_page/begin'
-  get 'login' => 'login_page#login'
+  get 'signup' => 'users#new'
+  resources :users
+  get 'login' => 'login_page'
+  get 'registration' => 'registration'
 end
 3000
